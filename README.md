@@ -130,9 +130,3 @@ New-NetFirewallRule -DisplayName "UploadApp 6543" -Direction Inbound -Protocol T
 * [Multer](https://github.com/expressjs/multer)
 * [WS (WebSocket)](https://github.com/websockets/ws)
 * [Chokidar](https://github.com/paulmillr/chokidar)
-
----
-
-## 📝 License
-
-MIT
