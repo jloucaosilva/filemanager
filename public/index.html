@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>File Manager</title>
+    <link rel="stylesheet" href="/content.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>File Manager</h1>
+
+        <form id="uploadForm" enctype="multipart/form-data">
+            <input type="file" id="fileInput" name="files" multiple hidden />
+            <label for="fileInput" id="fileInputLabel">Choose Files</label>
+
+            <select id="folderSelect">
+                <option value="">Upload to root</option>
+            </select>
+
+            <input type="text" id="newFolderInput" placeholder="Or create new folder" />
+
+            <button type="submit" id="uploadButton">Upload</button>
+        </form>
+
+        <div id="dropZone">Drag & drop one or more files here</div>
+        <div id="progressContainer"></div>
+		
+		<div id="selectedFilesList" class="selected-files"></div>
+
+        <h2>Files</h2>
+        <div id="fileTree" class="file-tree"></div>
+    </div>
+
+    <div id="markdownModal" style="display: none;">
+        <div id="markdownContent"></div>
+        <button id="closeModal">Close</button>
+    </div>
+
+    <script src="/content.js"></script>
+</body>
+</html>
