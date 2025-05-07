@@ -278,4 +278,11 @@ document.addEventListener('DOMContentLoaded', () => {
     } catch (err) {
         console.warn('[ws] WebSocket not supported:', err);
     }
+	
+	// Register service worker
+	if ('serviceWorker' in navigator) {
+		navigator.serviceWorker.register('/sw.js')
+			.then(reg => console.log('[sw] Registered', reg.scope))
+			.catch(err => console.error('[sw] Registration failed', err));
+	}
 });
