@@ -110,11 +110,19 @@ form {
     margin: 4px 0;
     gap: 6px;
     padding-left: 20px;
+    flex-wrap: wrap;              /* Allow items to wrap */
+    word-break: break-word;      /* Break long filenames */
+    overflow-wrap: anywhere;     /* Break anywhere if needed */
 }
 
 .file img {
     width: 20px;
     height: 20px;
+}
+
+.file a {
+    max-width: 100%;
+    word-break: break-word;
 }
 
 #markdownModal {
