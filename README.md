@@ -1,4 +1,4 @@
-# FileManager – Lightweight Self-Hosted Upload Tool
+# FileManager – PWA Lightweight Self-Hosted Upload Tool
 
 ## 🚀 Overview
 
